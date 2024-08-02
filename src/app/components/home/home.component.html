@@ -1,0 +1,7 @@
+<div>
+    <video #localVideo autoplay muted></video>
+    <video #remoteVideo autoplay></video>
+  </div>
+  <input #remotePeerIdInput type="text" placeholder="Remote Peer ID">
+  <button (click)="startCall(remotePeerIdInput.value)">Start Call</button>
+  <button (click)="endCall()">End Call</button>
